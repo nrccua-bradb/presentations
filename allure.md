@@ -1,3 +1,4 @@
+<!-- fg=white bg=black -->
 # Allure - Getting Started
 
 ## Let's Chat
@@ -94,7 +95,7 @@ It works!
 
 ---
 
-## How do we use it? = Part 1 (Repo Setup)
+## How do we use it? - Part 1 (Repo Setup)
 
 First, we make a few additions to an existing repo:
 ```
@@ -144,3 +145,8 @@ and keeps a recent history of pass/fail from previous runs.
   - S3 sync doesn't inherently go 2-way, so I have separate scripts to "push" and "pull"
   - We could put this on a cron schedule, or work a way to trigger it after every upload
   - There are 3rd party packages to mount the s3 bucket as a drive, but I'm not sure we want to go there yet
+
+---
+<!-- fg=white bg=black -->
+
+# Any Questions?
