@@ -94,27 +94,34 @@ It works!
 
 ---
 
-## How do we use it?
+## How do we use it? = Part 1 (Repo Setup)
 
-First we need to add a project
-```
-curl -X POST -H "Content-Type: application/json" \
-  -d '{"id": "my-project-id"}' \
-  http://10.33.6.73/allure/projects
-```
-
-Then, we make a few additions to an existing repo:
+First, we make a few additions to an existing repo:
 ```
 pip install allure-pytest
 pip install git+ssh://git@github.com/nrccua/qa_tools.git
 ```
+
+Then we need to add a project (uses `qa_tools` helper)
+```
+allure-add my-project-id
+```
+
+We can also view existing projects (`qa_tools` helpers):
+```
+allure-list
+```
+
+---
+
+## How do we use it? -  Part 2 (Regular Usage)
 
 And we can generate allure results (uses `allure-pytest`) from a run by specifying a target directory:
 ```
 pytest --alluredir=allure_results my/test/path
 ```
 
-Then upload the results afterwards using a helper I added in `qa_tools`:
+Then upload the results afterwards (uses `qa_tools` helper):
 ```
 allure-upload my-project-id allure_results
 ```
