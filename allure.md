@@ -147,6 +147,15 @@ and keeps a recent history of pass/fail from previous runs.
   - There are 3rd party packages to mount the s3 bucket as a drive, but I'm not sure we want to go there yet
 
 ---
+
+## Links
+
+- [Allure Test Project Page](http://10.33.6.73/allure/projects/ios-mobile/reports/latest/index.html)
+- [Allure Swagger](http://10.33.6.73/allure/allure-docker-service/swagger/)
+- [Detailed Notes on Allure-Pytest](https://docs.qameta.io/allure/#_pytest)
+
+---
+
 <!-- fg=white bg=black -->
 
 # Any Questions?
